@@ -1,0 +1,8 @@
+import numpy as np
+import matplotlib.pyplot as plt
+def f(k, x):
+    return np.cos(k*x)
+x = np.linspace(0, 3, 21)
+y1 = f(1, x)
+y2 = f(0.8, x)
+plt.plot(x, y1, y2)
